@@ -1,6 +1,6 @@
 # flight-analyzer-edu
 
-> 🎓 An educational Python project demonstrating GUI development, data analysis, and API interactions through a flight price analysis tool. For learning purposes only.
+> 🎓 An educational Python project demonstrating GUI development, data analysis, and API interactions through a flight price analysis tool, with a focus on AirAsia flights. For learning purposes only.
 
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
