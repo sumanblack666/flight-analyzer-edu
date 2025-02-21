@@ -1,4 +1,4 @@
-# flight-analyzer-edu
+# Airasia flight Scraper/Analyzer
 
 > 🎓 An educational Python project demonstrating GUI development, data analysis, and API interactions through a flight price analysis tool, with a focus on AirAsia flights. For learning purposes only.
 
