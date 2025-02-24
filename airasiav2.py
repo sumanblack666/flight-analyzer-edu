@@ -384,19 +384,9 @@ class FlightPriceScraper:
         if not selected:
             messagebox.showerror("Selection Error", "Select a departure code to delete.")
             return
-        # Get the codes to delete
-        codes_to_delete = [self.departure_listbox.get(idx) for idx in selected]
-        # Delete from departure list
+        # Delete only from departure list
         for index in reversed(selected):
             self.departure_listbox.delete(index)
-        # Delete from destination list
-        for code in codes_to_delete:
-            idx = 0
-            while idx < self.destination_listbox.size():
-                if self.destination_listbox.get(idx) == code:
-                    self.destination_listbox.delete(idx)
-                    break
-                idx += 1
         self.save_city_codes()
 
     # --- Functions for Editing Destination Codes ---
@@ -415,19 +405,9 @@ class FlightPriceScraper:
         if not selected:
             messagebox.showerror("Selection Error", "Select a destination code to delete.")
             return
-        # Get the codes to delete
-        codes_to_delete = [self.destination_listbox.get(idx) for idx in selected]
-        # Delete from destination list
+        # Delete only from destination list
         for index in reversed(selected):
             self.destination_listbox.delete(index)
-        # Delete from departure list
-        for code in codes_to_delete:
-            idx = 0
-            while idx < self.departure_listbox.size():
-                if self.departure_listbox.get(idx) == code:
-                    self.departure_listbox.delete(idx)
-                    break
-                idx += 1
         self.save_city_codes()
 
     def setup_gui(self):
